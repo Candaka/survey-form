@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">State Senior High School 33 Jakarta Survey Form</h1>
+        <p id="description" class="description text-center">
+            Thank you for taking the time to fill out the form
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>What grade/role are you in now?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current grade/roll</option>
+            <option value="10th-grade">10th grade</option>
+            <option value="11th-grade">11th grade</option>
+            <option value="12th-grade">12th grade</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Have you ever carried out a P5 project?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+          <label>
+            <input name="user-recommend" value="not-yet" type="radio" class="input-radio">Not yet</label>
+
+          <label><input name="user-recommend" value="have-not-heard" type="radio" class="input-radio">Haven't heard of it</label>
+
+          <label><input name="user-recommend" value="other" type="radio" class="input-radio">Other</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite part of P5 project??</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="teamwork">Teamwork</option>
+            <option value="creativity">Creativity</option>
+            <option value="product-development">Product Development</option>
+            <option value="interview">Interview</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" value="communication" type="checkbox" class="input-checkbox">Communication between teachers and students</label>
+          <label><input name="prefer" value="cooperation" type="checkbox" class="input-checkbox">Cooperation between students</label>
+          <label><input name="prefer" value="theme" type="checkbox" class="input-checkbox">Project theme</label>
+          <label><input name="prefer" value="other" type="checkbox" class="input-checkbox">other</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  
+
+</body></html>
